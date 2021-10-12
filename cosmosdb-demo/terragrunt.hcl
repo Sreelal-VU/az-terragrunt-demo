@@ -1,5 +1,5 @@
 terraform {
-  source = "/Users/srunnikrishnan/Desktop/Disney/TOCDM-343/cosmosdb"
+  source = "/Users/srunnikrishnan/Desktop/Disney/TOCDM-343/cosmosdb-demo"
 }
    
 remote_state {
