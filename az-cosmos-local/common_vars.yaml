@@ -1,0 +1,78 @@
+common_tags:
+  APPID: "APP"
+  BILLINGCODE: "LPX00632-01-01-91-1000"
+  BUSINESSOWNER: "jyoder@deloitte.com"
+  COUNTRY: "US"
+  CSCLASS: "CON"
+  CSQUAL: "Personal Information"
+  CSTYPE: "Both"
+  ENVIRONMENT: "DEV"
+  FUNCTION: "CON"
+  GROUPCONTACT: "jyoder@deloitte.com"
+  MEMBERFIRM: "US"
+  PRIMARYCONTACT: "jyoder@deloitte.com"
+  SECONDCONTACT: "jyoder@deloitte.com"
+
+delivery: "azhaze1"
+function_address_range: "10.1.6.0/24"
+function_ingestion_app_code: "INGESTION"
+function_username: "functionadmin"
+iteration: "001"
+public_dns_zone_name: "hux-azhaze1.in"
+server_admin_username: "servadmin"
+vnet_address_ranges:
+  - "10.1.0.0/16"
+subnets:
+  apim:
+    subnet_name: "APIM"
+    address_range: "10.1.5.0/24"
+    delegation:
+      name: "Microsoft.ApiManagement.service"
+      service_delegation_name: "Microsoft.ApiManagement/service"
+      service_delegation_actions: [
+          "Microsoft.Network/virtualNetworks/subnets/join/action",
+          "Microsoft.Network/virtualNetworks/subnets/prepareNetworkPolicies/action"
+      ]
+  aks:
+    subnet_name: "AKS"
+    address_range: "10.1.2.0/24"
+  vm:
+    subnet_name: "VM"
+    address_range: "10.1.1.0/24"
+
+gateway_address_cidr: "10.1.0.0/24"
+
+vnet_name: "MAIN"
+
+sa_raw_data_storage_containers:
+  - aqfer
+  - bluecore
+  - netsuite
+
+public_cert: >
+  MIIEvTCCA6WgAwIBAgIJAJZcYQm3L6alMA0GCSqGSIb3DQEBCwUAMIGaMQswCQYD
+  VQQGEwJVUzELMAkGA1UECBMCTlkxETAPBgNVBAcTCE5ldy1Zb3JrMRAwDgYDVQQK
+  EwdNYWduZWljMRAwDgYDVQQLEwdUZWNob3BzMRMwEQYDVQQDEwpNYWduZWljIENB
+  MQ8wDQYDVQQpEwZzZXJ2ZXIxITAfBgkqhkiG9w0BCQEWEmFkbWluQG1hZ25ldGlj
+  LmNvbTAeFw0xOTAyMTMwNzEyMTRaFw0yOTAyMTAwNzEyMTRaMIGaMQswCQYDVQQG
+  EwJVUzELMAkGA1UECBMCTlkxETAPBgNVBAcTCE5ldy1Zb3JrMRAwDgYDVQQKEwdN
+  YWduZWljMRAwDgYDVQQLEwdUZWNob3BzMRMwEQYDVQQDEwpNYWduZWljIENBMQ8w
+  DQYDVQQpEwZzZXJ2ZXIxITAfBgkqhkiG9w0BCQEWEmFkbWluQG1hZ25ldGljLmNv
+  bTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALPwGHCcQGmKbMfxcehX
+  iq4ASu+kf6k9jgkpCI0TiHy3IrhMrGJCbl/hSB8O7Ozc5a/gEDTnN1QLtQo8hXUk
+  kfPt0sehpx076xlTyJGvFHdufycqr+fugYeR8QfVkVgmAvOb6hOIhcH/4d5Ad9Ro
+  C57X7V9tgh4XoIZlDuVdDQ/00wUC3SCIPp0QGUyTvGBta9pGv5RM6IAW7KEa0c4b
+  fRjop6tadx7GmUsxH0qqPkjgT7ILr9F6LzHbG8P+xZgih1ZqiiXfNH+3sUxcLywa
+  J5gmXm2b5NCPG7mwIMY8S2Tq9ffwnQj9DDGJfQUOAQx4hAFk2gsOQQrM/r74I1fF
+  d4MCAwEAAaOCAQIwgf8wHQYDVR0OBBYEFO+Kk2s0KTGTwRuIGwCsfLNdczP8MIHP
+  BgNVHSMEgccwgcSAFO+Kk2s0KTGTwRuIGwCsfLNdczP8oYGgpIGdMIGaMQswCQYD
+  VQQGEwJVUzELMAkGA1UECBMCTlkxETAPBgNVBAcTCE5ldy1Zb3JrMRAwDgYDVQQK
+  EwdNYWduZWljMRAwDgYDVQQLEwdUZWNob3BzMRMwEQYDVQQDEwpNYWduZWljIENB
+  MQ8wDQYDVQQpEwZzZXJ2ZXIxITAfBgkqhkiG9w0BCQEWEmFkbWluQG1hZ25ldGlj
+  LmNvbYIJAJZcYQm3L6alMAwGA1UdEwQFMAMBAf8wDQYJKoZIhvcNAQELBQADggEB
+  AFGg5sak0H9+miZOOGWn/J/zdcL+mfvB8uFl4N/3QRJ/TSW4DDQCxdMSCd0KiOH0
+  ivui/Oxo35NmuBTK5JxxvCNs3AuBV//IcoXSgD+lVnp0GvYTR30TSL7Od7tTgw+t
+  HQltLCe4IdeaIKbWiFA5zIIsbofZcIEm/4rN9h+j4gROLk4SyHdWOIn1+nR3Fbd3
+  /O5Kr794eLMdlzd1qu3gialfQ78hU3fzuKVEHTqkeWBBsuG5Dyjz4U+vsjR+nTkL
+  Tmqc9sdJaHiShfkqEcEVUediVpnhlaJYf9fkHH7VWsi0+dEIFAIrszFUlqpf9e/n
+  0SV3DHSwSmc/DhHnie+Y8m4=
